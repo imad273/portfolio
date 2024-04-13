@@ -8,7 +8,7 @@ const Navbar = () => {
   const [phoneMenu, setPhoneMenu] = useState(false);
 
   return (
-    <nav className='container flex justify-between items-center py-3 shadow mb-6'>
+    <nav className='container flex justify-between items-center py-3 shadow'>
       <div>
         <span className='text-slate-700 font-bold text-2xl'>emad.dev</span>
       </div>
@@ -22,10 +22,10 @@ const Navbar = () => {
           <IoCloseSharp size={28} className='cursor-pointer' />
         </div>
         <div className="flex flex-col items-center md:flex-row md:mx-1 gap-6">
-          <a className="leading-5 text-slate-800 duration-300 hover:text-blue-600" href="#">Home</a>
-          <a className="leading-5 text-slate-800 duration-300 hover:text-blue-600" href="#">Blog</a>
-          <a className="leading-5 text-slate-800 duration-300 hover:text-blue-600" href="#">Components</a>
-          <a className="leading-5 text-slate-800 duration-300 hover:text-blue-600" href="#">Courses</a>
+          <a className="font-semibold text-slate-800 duration-300 hover:text-blue-600" href="#">Home</a>
+          <a className="font-semibold text-slate-800 duration-300 hover:text-blue-600" href="#">Blog</a>
+          <a className="font-semibold text-slate-800 duration-300 hover:text-blue-600" href="#">Components</a>
+          <a className="font-semibold text-slate-800 duration-300 hover:text-blue-600" href="#">Courses</a>
         </div>
       </div>
     </nav>
