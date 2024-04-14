@@ -9,17 +9,18 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "4rem",
-      screens: {
-        "2xl": "1400px",
+      padding: {
+        DEFAULT: '1.5rem',
+        sm: '1.5rem',
+        md: '2rem',
+        lg: '2.5rem',
       },
     },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      colors: {
+        'main': '#FD481D',
+        'main_hover': '#E3401A',
+      }
     },
   },
   plugins: [],
