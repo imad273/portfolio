@@ -12,7 +12,7 @@ const Home = () => {
           <h3 className="text-6xl font-bold text-slate-700">Hi! I Am <br /><span>Emad Abbad <MeteoconsStarFill className="z-10 relative bottom-2 right-2 inline" /></span></h3>
           <p className="text-lg font-semibold text-slate-800">Front-End Developer, Building websites and web apps for over 3 years</p>
           <div className="flex items-center gap-6">
-            <button className="px-7 py-2.5 bg-main text-white font-bold hover:bg-main_hover">
+            <button className="px-7 py-2.5 bg-main text-white font-bold hover:bg-main_hover duration-300">
               Hire me
             </button>
 
