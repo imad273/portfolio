@@ -34,7 +34,7 @@ const Projects = () => {
         <div className='py-12'>
           <h3 className='uppercase text-main font-semibold text-3xl text-center'>Projects & Experience</h3>
 
-          <div className='my-12 grid grid-cols-3 gap-8'>
+          <div className='my-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
             {Projects.map(project => (
               <div className='glass p-3 flex flex-col'>
                 <Image src={project.picture} alt={project.name} />
