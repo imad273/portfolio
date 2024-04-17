@@ -1,13 +1,15 @@
 import {
   Home,
-  About
-} from "../pages"
+  About,
+  Projects
+} from "../components/pages"
 
 export default function Page() {
   return (
     <>
       <Home />
       <About />
+      <Projects />
     </>
   );
 }

@@ -1,12 +1,12 @@
 import React from 'react'
-import { MeteoconsStarFill } from "../assets/star";
+import { MeteoconsStarFill } from "../../assets/star";
 import Link from "next/link";
 import { CgArrowsExpandUpRight } from "react-icons/cg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <section className="bg-gradient-to-br from-[#EDEEED] to-white">
+    <section className="bg-gradient-to-br from-second_bg to-white">
       <div className="container flex justify-start items-center min-h-[90vh] ">
         <div className="space-y-4 h-full">
           <h3 className="text-6xl font-bold text-slate-700">Hi! I Am <br /><span>Emad Abbad <MeteoconsStarFill className="z-10 relative bottom-2 right-2 inline" /></span></h3>

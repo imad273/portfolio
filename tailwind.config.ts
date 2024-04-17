@@ -20,6 +20,7 @@ const config: Config = {
       colors: {
         'main': '#FD481D',
         'main_hover': '#E3401A',
+        'second_bg': '#EDEEED',
       }
     },
   },
