@@ -99,7 +99,7 @@ const Projects = () => {
                       ))}
                     </div>
                     <h3 className='text-2xl text-slate-800 font-semibold'>{project.name}</h3>
-                    <p className='text-slate-800'>
+                    <p className='text-slate-600'>
                       {project.description}
                     </p>
                   </div>
