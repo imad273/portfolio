@@ -1,7 +1,8 @@
 import {
   Home,
   About,
-  Projects
+  Projects,
+  Contact
 } from "../components/pages"
 
 export default function Page() {
@@ -10,6 +11,7 @@ export default function Page() {
       <Home />
       <About />
       <Projects />
+      <Contact />
     </>
   );
 }

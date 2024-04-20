@@ -20,8 +20,8 @@ const Home = () => {
           </div>
 
           <div className="flex items-center gap-2">
-            <Link href={""}><FaLinkedin size={20} className="text-gray-700 hover:text-main duration-300" /></Link>
-            <Link href={""}><FaGithub size={20} className="text-gray-700 hover:text-main duration-300" /></Link>
+            <Link target='_blank' href={"https://www.linkedin.com/in/emad-203/"}><FaLinkedin size={20} className="text-gray-700 hover:text-main duration-300" /></Link>
+            <Link target='_blank' href={"https://github.com/imad273"}><FaGithub size={20} className="text-gray-700 hover:text-main duration-300" /></Link>
           </div>
         </div>
       </div>
