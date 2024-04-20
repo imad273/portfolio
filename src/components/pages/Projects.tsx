@@ -12,19 +12,70 @@ const Projects = () => {
       picture: FyloPic,
       name: "Fylo",
       description: "Fylo is a landing page",
-      link: "https://imad273.github.io/Fylo-Landing-Page/public/"
+      link: "https://imad273.github.io/Fylo-Landing-Page/public/",
+      technologies: [
+        {
+          name: "HTML",
+          bgColor: "#fccccc",
+          textColor: "#C30101"
+        },
+        {
+          name: "CSS",
+          bgColor: "#cbebf5",
+          textColor: "#000F8E"
+        },
+        {
+          name: "TailwindCSS",
+          bgColor: "#FEF7C3",
+          textColor: "#C78000"
+        }
+      ]
     },
     {
       picture: IpAddressTracking,
       name: "IP Address Tracker",
       description: "Web application for tracking IP addresses and know where exactly they are, through an API called ipgoelocation.",
-      link: "https://imad273.github.io/ip-address-tracker/"
+      link: "https://imad273.github.io/ip-address-tracker/",
+      technologies: [
+        {
+          name: "HTML",
+          bgColor: "#fccccc",
+          textColor: "#C30101"
+        },
+        {
+          name: "CSS",
+          bgColor: "#cbebf5",
+          textColor: "#000F8E"
+        },
+        {
+          name: "Mapbox",
+          bgColor: "#FBDDED",
+          textColor: "#EF6DAF"
+        }
+      ]
     },
     {
       picture: Ditch,
       name: "Ditch Portfolio",
       description: "Portfolio for UI/UX designer using TailwindCSS.",
-      link: "https://imad273.github.io/Ditch-Portfolio/public/"
+      link: "https://imad273.github.io/Ditch-Portfolio/public/",
+      technologies: [
+        {
+          name: "HTML",
+          bgColor: "#fccccc",
+          textColor: "#C30101"
+        },
+        {
+          name: "CSS",
+          bgColor: "#cbebf5",
+          textColor: "#000F8E"
+        },
+        {
+          name: "TailwindCSS",
+          bgColor: "#FEF7C3",
+          textColor: "#C78000"
+        }
+      ]
     }
   ]
 
@@ -40,15 +91,22 @@ const Projects = () => {
                 <Image src={project.picture} alt={project.name} />
                 <div className='flex flex-col gap-6 pt-3 h-full'>
                   <div className='flex-1'>
+                    <div className='flex gap-2 mb-3 mt-1'>
+                      {project.technologies.map(tech => (
+                        <div className='pb-0.5 px-2 rounded-full' style={{ background: tech.bgColor, color: tech.textColor }}>
+                          <span className='text-xs font-semibold'>{tech.name}</span>
+                        </div>
+                      ))}
+                    </div>
                     <h3 className='text-2xl text-slate-800 font-semibold'>{project.name}</h3>
                     <p className='text-slate-800'>
                       {project.description}
                     </p>
                   </div>
 
-                  <div className=''>
-                    <div className='text-slate-700 hover:text-main flex justify-end'>
-                      <Link href={project.link} target='_blank' className='flex gap-2 items-center '>
+                  <div>
+                    <div className='flex justify-end'>
+                      <Link href={project.link} target='_blank' className='flex gap-2 items-center text-slate-700 hover:text-main'>
                         <FaExternalLinkAlt /> View
                       </Link>
                     </div>
