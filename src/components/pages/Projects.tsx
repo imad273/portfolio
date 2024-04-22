@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import FyloPic from '@/assets/fylo.jpeg'
 import IpAddressTracking from '@/assets/ip-address-tracking.jpeg'
@@ -6,6 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from "react-icons/fa";
 import azure from "@/assets/AZURE-HOTEL.jpg";
+import { motion } from 'framer-motion'
 
 const Projects = () => {
   const Projects = [
@@ -107,11 +110,21 @@ const Projects = () => {
     <section className='min-h-screen bg-gradient-to-br from-second_bg to-white' id='projects'>
       <div className='container h-full'>
         <div className='py-12'>
-          <h3 className='uppercase text-main font-bold text-3xl text-center'>Projects & Experience</h3>
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <h3 className='uppercase text-main font-bold text-3xl text-center'>Projects & Experience</h3>
+          </motion.div>
 
           <div className='my-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
             {Projects.map(project => (
-              <div className='glass p-3 flex flex-col'>
+              <motion.div
+                initial={{ opacity: 0, x: 25 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                className='glass p-3 flex flex-col' key={project.name}>
                 <div className='h-64'>
                   <Image src={project.picture} alt={project.name} className='h-[inherit]' />
                 </div>
@@ -119,7 +132,7 @@ const Projects = () => {
                   <div className='flex-1'>
                     <div className='flex gap-2 mb-3 mt-1'>
                       {project.technologies.map(tech => (
-                        <div className='pb-0.5 px-2 rounded-full' style={{ background: tech.bgColor, color: tech.textColor }}>
+                        <div key={tech.name} className='pb-0.5 px-2 rounded-full' style={{ background: tech.bgColor, color: tech.textColor }}>
                           <span className='text-xs font-semibold'>{tech.name}</span>
                         </div>
                       ))}
@@ -138,7 +151,7 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
