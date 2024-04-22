@@ -18,8 +18,9 @@ const config: Config = {
     },
     extend: {
       colors: {
-        'main': '#FD481D',
-        'main_hover': '#E3401A',
+        /* 'main': '#FD481D', */
+        'main': '#EF1D28',
+        'main_hover': '#F13C45',
         'second_bg': '#EDEEED',
       }
     },

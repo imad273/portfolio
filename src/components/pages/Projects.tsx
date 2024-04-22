@@ -104,10 +104,10 @@ const Projects = () => {
   ]
 
   return (
-    <section className='min-h-screen bg-gradient-to-br from-second_bg to-white'>
+    <section className='min-h-screen bg-gradient-to-br from-second_bg to-white' id='projects'>
       <div className='container h-full'>
         <div className='py-12'>
-          <h3 className='uppercase text-main font-semibold text-3xl text-center'>Projects & Experience</h3>
+          <h3 className='uppercase text-main font-bold text-3xl text-center'>Projects & Experience</h3>
 
           <div className='my-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
             {Projects.map(project => (

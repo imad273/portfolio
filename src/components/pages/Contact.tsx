@@ -5,10 +5,10 @@ import { IoMdMail } from 'react-icons/io'
 
 const Contact = () => {
   return (
-    <section className='container'>
+    <section className='container' id='contact'>
       <div className='min-h-[70vh] flex items-center'>
         <div>
-          <h3 className='uppercase text-main font-semibold text-3xl'>Contact me</h3>
+          <h3 className='uppercase text-main font-bold text-3xl'>Contact me</h3>
           <p className='text-slate-700 text-xl'>Don't be shy! Hit me up! 👇</p>
 
           <div className='flex items-center gap-10 my-8 flex-wrap'>

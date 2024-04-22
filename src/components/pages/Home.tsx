@@ -6,17 +6,17 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <section className="bg-gradient-to-br from-second_bg to-white">
+    <section className="bg-gradient-to-br from-second_bg to-white" id='home'>
       <div className="container flex justify-start items-center min-h-[90vh] ">
         <div className="space-y-4 h-full">
           <h3 className="text-6xl font-bold text-slate-700">Hi! I Am <br /><span>Emad Abbad <MeteoconsStarFill className="z-10 relative bottom-2 right-2 inline" /></span></h3>
           <p className="text-lg font-semibold text-slate-800">Front-End Developer, Building websites and web apps for over 3 years.</p>
           <div className="flex items-center gap-6">
-            <button className="px-7 py-2.5 bg-main text-white font-bold hover:bg-main_hover duration-300">
+            <a target='_blank' href='https://www.linkedin.com/in/emad-203/' className="px-7 py-2.5 bg-main text-white font-bold hover:bg-main_hover duration-300">
               Hire me
-            </button>
+            </a>
 
-            <Link href="/" className="flex items-center gap-3 font-semibold hover:text-main duration-300">Projects <CgArrowsExpandUpRight /></Link>
+            <a href="#projects" className="flex items-center gap-3 font-semibold hover:text-main duration-300">Projects <CgArrowsExpandUpRight /></a>
           </div>
 
           <div className="flex items-center gap-2">

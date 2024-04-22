@@ -4,10 +4,10 @@ import image from '@/assets/guy_coding.png'
 
 const About = () => {
   return (
-    <section className='min-h-screen'>
+    <section className='min-h-screen' id='about'>
       <div className='container flex justify-center items-center h-full'>
         <div className='py-12 text-center flex justify-center flex-col gap-5 items-center'>
-          <h3 className='uppercase text-main font-semibold text-3xl'>about me</h3>
+          <h3 className='uppercase text-main font-bold text-3xl'>about me</h3>
           <p className='md:text-xl text-slate-700 md:w-8/12'>
             <span className='font-semibold text-slate-800'>Front-end Developer based in Algeria 📍.</span>
             <br /> My name is Emad, and I'm a Frontend Developer. My passion is to create and

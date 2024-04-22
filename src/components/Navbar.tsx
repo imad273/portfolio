@@ -22,10 +22,10 @@ const Navbar = () => {
           <IoCloseSharp size={28} className='cursor-pointer' />
         </div>
         <div className="flex flex-col items-center md:flex-row md:mx-1 gap-6">
-          <a className="font-semibold text-slate-800 duration-300 hover:text-main" href="#">Home</a>
-          <a className="font-semibold text-slate-800 duration-300 hover:text-main" href="#">About</a>
-          <a className="font-semibold text-slate-800 duration-300 hover:text-main" href="#">Projects</a>
-          <a className="font-semibold text-slate-800 duration-300 hover:text-main" href="#">Contact</a>
+          <a className="font-semibold text-slate-800 duration-300 hover:text-main" href="#home">Home</a>
+          <a className="font-semibold text-slate-800 duration-300 hover:text-main" href="#about">About</a>
+          <a className="font-semibold text-slate-800 duration-300 hover:text-main" href="#projects">Projects</a>
+          <a className="font-semibold text-slate-800 duration-300 hover:text-main" href="#contact">Contact</a>
         </div>
       </div>
     </nav>
