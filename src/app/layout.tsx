@@ -15,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <head>
+        <title>emad</title>
+      </head>
+      <body className="overflow-x-hidden">
         <Navbar />
 
         {children}

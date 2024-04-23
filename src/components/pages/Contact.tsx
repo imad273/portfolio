@@ -8,7 +8,7 @@ import { IoMdMail } from 'react-icons/io'
 
 const Contact = () => {
   return (
-    <section className='container' id='contact'>
+    <section className='container overflow-x-hidden' id='contact'>
       <div className='min-h-[70vh] flex items-center'>
         <div>
           <motion.div
@@ -17,14 +17,15 @@ const Contact = () => {
             transition={{ duration: 1 }}>
 
             <h3 className='uppercase text-main font-bold text-3xl'>Contact me</h3>
-            <p className='text-slate-700 text-xl'>Don't be shy! Hit me up! 👇</p>
+            <p className='text-slate-700 text-xl'>don&apos;t be shy! Hit me up! 👇</p>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 25 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className='flex items-center gap-10 my-8 flex-wrap'>
+            className='flex md:items-center gap-10 my-8 flex-col md:flex-row flex-wrap'
+          >
             <div className='flex gap-5 items-center'>
               <div className='rounded-2xl bg-main p-2'>
                 <IoMdMail className='text-white' size={26} />

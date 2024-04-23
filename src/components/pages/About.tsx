@@ -24,7 +24,7 @@ const About = () => {
           >
             <p className='md:text-xl text-slate-700 md:w-8/12'>
               <span className='font-semibold text-slate-800'>Front-end Developer based in Algeria 📍.</span>
-              <br /> My name is Emad, and I'm a Frontend Developer. My passion is to create and
+              <br /> My name is Emad, and I&apos;m a Frontend Developer. My passion is to create and
               develop a clean UI/UX websites and apps for my users. <br />
               My main stack currently is <span className='font-semibold text-slate-800'>React/Next.js</span> in combination with Tailwind CSS and <span className='font-semibold text-slate-800'>TypeScript.</span>
             </p>
