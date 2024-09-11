@@ -4,6 +4,7 @@ import React from 'react'
 import FyloPic from '@/assets/fylo.jpeg'
 import IpAddressTracking from '@/assets/ip-address-tracking.jpeg'
 import Ditch from '@/assets/Ditch.jpeg'
+import Ratro from '@/assets/ratro.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -12,6 +13,29 @@ import { motion } from 'framer-motion'
 
 const Projects = () => {
   const Projects = [
+    {
+      picture: Ratro,
+      name: "Ratro Store",
+      description: "Ratro is a store with it's admin panel, with a lot of futures like settings page product management etc...",
+      link: "https://ratro.vercel.app/",
+      technologies: [
+        {
+          name: "NextJS",
+          bgColor: "#fccccc",
+          textColor: "#C30101"
+        },
+        {
+          name: "Shadcn",
+          bgColor: "#cbebf5",
+          textColor: "#000F8E"
+        },
+        {
+          name: "TypeScript",
+          bgColor: "#FEF7C3",
+          textColor: "#C78000"
+        }
+      ]
+    },
     {
       picture: FyloPic,
       name: "Fylo",
@@ -61,7 +85,7 @@ const Projects = () => {
     {
       picture: azure,
       name: "Azure Control panel",
-      description: "Azure is an admin control panel for hotel, azure was build using react/typescript and Shadcn in the front, nodejs/mongodb in the backend",
+      description: "Azure is an admin control panel for hotel, azure have room, staff management an more awesome futures",
       link: "https://azure-hotel-panel.vercel.app/",
       technologies: [
         {
@@ -84,7 +108,7 @@ const Projects = () => {
     {
       picture: Ditch,
       name: "Ditch Portfolio",
-      description: "Portfolio for UI/UX designer using TailwindCSS.",
+      description: "Portfolio for UI/UX designer",
       link: "https://imad273.github.io/Ditch-Portfolio/public/",
       technologies: [
         {
