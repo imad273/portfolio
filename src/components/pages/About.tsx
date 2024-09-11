@@ -58,6 +58,9 @@ const About = () => {
                 <div>
                   <img src={'https://skillicons.dev/icons?i=react,next'} alt="react,next" />
                 </div>
+                <div>
+                  <img src={'https://skillicons.dev/icons?i=supabase,nodejs'} alt="react,next" />
+                </div>
               </div>
             </div>
           </motion.div>
