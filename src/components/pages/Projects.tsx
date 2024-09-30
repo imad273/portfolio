@@ -8,11 +8,35 @@ import Ratro from '@/assets/ratro.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from "react-icons/fa";
-import azure from "@/assets/AZURE-HOTEL.jpg";
+import azure from "@/assets/AZURE-HOTEL.png";
+import trendHive from "@/assets/trendHive.png";
 import { motion } from 'framer-motion'
 
 const Projects = () => {
   const Projects = [
+    {
+      picture: trendHive,
+      name: "TrendHive",
+      description: "Trend hive is a landing page for a cosmetic product",
+      link: "https://imad273.github.io/trendHive_landing_page/",
+      technologies: [
+        {
+          name: "HTML",
+          bgColor: "#fccccc",
+          textColor: "#C30101"
+        },
+        {
+          name: "CSS",
+          bgColor: "#cbebf5",
+          textColor: "#000F8E"
+        },
+        {
+          name: "Tailwind",
+          bgColor: "#FEF7C3",
+          textColor: "#C78000"
+        }
+      ]
+    },
     {
       picture: Ratro,
       name: "Ratro Store",
@@ -39,7 +63,7 @@ const Projects = () => {
     {
       picture: FyloPic,
       name: "Fylo",
-      description: "Fylo is a landing page",
+      description: "Fylo is a landing page for SaaS product",
       link: "https://imad273.github.io/Fylo-Landing-Page/public/",
       technologies: [
         {
