@@ -8,7 +8,7 @@ import Ratro from '@/assets/ratro.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from "react-icons/fa";
-import azure from "@/assets/AZURE-HOTEL.png";
+import azure from "@/assets/AZURE-HOTEL.jpg";
 import trendHive from "@/assets/trendHive.png";
 import { motion } from 'framer-motion'
 
@@ -109,7 +109,7 @@ const Projects = () => {
     {
       picture: azure,
       name: "Azure Control panel",
-      description: "Azure is an admin control panel for hotel, azure have room, staff management an more awesome futures",
+      description: "Azure is an admin control panel for hotel, azure have room, staff management and more awesome futures",
       link: "https://azure-hotel-panel.vercel.app/",
       technologies: [
         {
