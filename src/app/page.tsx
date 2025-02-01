@@ -1,14 +1,16 @@
 import {
-  Home,
+  HeroSection,
   About,
   Projects,
-  Contact
-} from "../components/pages"
+  Contact,
+  SocialProf
+} from "../components/sections"
 
 export default function Page() {
   return (
     <>
-      <Home />
+      <HeroSection />
+      <SocialProf />
       <About />
       <Projects />
       <Contact />

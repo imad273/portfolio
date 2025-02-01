@@ -6,11 +6,14 @@ const Footer = () => {
     <footer className="bg-gradient-to-br from-second_bg to-white">
       <div className="container grid grid-cols-1 items-center md:grid-cols-3 gap-4 md:gap-0 w-full py-6">
         <div>
-          <span className='text-slate-700 font-bold text-2xl'>emad<span className='text-main'>.</span>dev</span>
+          <span className='text-slate-700 font-bold text-2xl'>
+            emad
+            <span className='text-main'>.</span>
+          </span>
         </div>
 
         <div className='flex md:justify-center'>
-          <p className="text-sm text-slate-700">© Copyright 2024. All Rights Reserved.</p>
+          <p className="text-sm text-slate-700">© Copyright {new Date().getFullYear()}. All Rights Reserved.</p>
         </div>
 
         <div className="flex md:justify-end gap-3">

@@ -11,7 +11,9 @@ const Navbar = () => {
   return (
     <nav className='container flex justify-between items-center py-3'>
       <div>
-        <span className='text-slate-700 font-bold text-2xl'>emad<span className='text-main'>.</span>dev</span>
+        <p className='text-slate-700 font-bold text-2xl'>
+          emad<span className='text-main'>.</span>
+        </p>
       </div>
 
       <div className='md:hidden' onClick={() => setPhoneMenu(true)}>
