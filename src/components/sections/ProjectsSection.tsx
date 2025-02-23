@@ -8,12 +8,30 @@ import Ratro from '@/assets/ratro.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaExternalLinkAlt } from "react-icons/fa";
-import azure from "@/assets/AZURE-HOTEL.jpg";
+import estat from "@/assets/estat.png";
 import trendHive from "@/assets/trendHive.png";
 import { motion } from 'framer-motion'
 
 const Projects = () => {
   const Projects = [
+    {
+      picture: estat,
+      name: "Estat - Real Astate",
+      description: "Estat is High-converting website for real estate agency",
+      link: "https://estat-seven.vercel.app/",
+      technologies: [
+        {
+          name: "Next",
+          bgColor: "#fccccc",
+          textColor: "#C30101"
+        },
+        {
+          name: "Tailwind",
+          bgColor: "#FEF7C3",
+          textColor: "#C78000"
+        }
+      ]
+    },
     {
       picture: trendHive,
       name: "TrendHive",
@@ -103,29 +121,6 @@ const Projects = () => {
           name: "Mapbox",
           bgColor: "#FBDDED",
           textColor: "#EF6DAF"
-        }
-      ]
-    },
-    {
-      picture: azure,
-      name: "Azure Control panel",
-      description: "Azure is an admin control panel for hotel, azure have room, staff management and more awesome futures",
-      link: "https://azure-hotel-panel.vercel.app/",
-      technologies: [
-        {
-          name: "React",
-          bgColor: "#fccccc",
-          textColor: "#C30101"
-        },
-        {
-          name: "Nodejs",
-          bgColor: "#cbebf5",
-          textColor: "#000F8E"
-        },
-        {
-          name: "mongoDB",
-          bgColor: "#FEF7C3",
-          textColor: "#C78000"
         }
       ]
     },
